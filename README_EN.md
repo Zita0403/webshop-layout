@@ -6,12 +6,16 @@
 
 **Language:** EN English | [HU Magyar](README.md)
 
-![Homepage screenshot](public/images/webshop-layout.png)
-*Responsive homepage layout*
-![Homepage screenshot mobile view](public/images/webshop-layout-mobile-view.png)
-*Responsive homepage layout Mobile View*
-![Login screenshot](public/images/webshop-layout-login.png)
-*Login layout*
+## Screenshots
+
+![Homepage screenshot](public/images/webshop-layout.png)  
+*Responsive homepage layout (desktop view)*
+
+![Homepage screenshot mobile view](public/images/webshop-layout-mobile-view.png)  
+*Responsive homepage layout (mobile view)*
+
+![Login screenshot](public/images/webshop-layout-login.png)  
+*Login page layout*
 
 This is a simple webshop layout project using HTML, CSS, JavaScript, and Express.js. The project demonstrates a responsive user interface, mobile menu, search, login, registration, and cart functionality.
 
