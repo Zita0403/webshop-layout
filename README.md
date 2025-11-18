@@ -6,10 +6,14 @@
 
 **Nyelv:** HU Magyar | [GB English](README_EN.md)
 
+## Képernyőképek
+
 ![Kezdőlap képernyőképe](public/images/webshop-layout.png)
 *Főoldal reszponzív megjelenése*
+
 ![Kezdőlap képernyőképe mobilnézetben](public/images/webshop-layout-mobile-view.png)
 *Főoldal reszponzív megjelenése*
+
 ![Kezdőlap képernyőképe](public/images/webshop-layout-login.png)
 *Bejelentkezési képernyő*
 
