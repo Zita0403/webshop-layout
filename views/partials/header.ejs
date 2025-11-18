@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/<%= cssFile %>">
+</head>
+<body>
+    <header>
+        <!-- Az oldal neve, logo, keresés, bejelentkezés, vásárlás -->
+        <div class="header-section">
+            <div class="logo-header-container">
+                <div id="toggle-btn">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <ul id="hamburger-menu">
+                    <i id="close-hamburger-menu" class="fa-solid fa-xmark"></i>
+                    <li> <a href="">Akciók</a></li>
+                    <li> <a href="">Illóolajok</a></li>
+                    <li> <a href="">Csomagok</a></li>
+                </ul>
+                <div id="title">
+                    <div id="logo-img">
+                        <a href="/"><img src="/images/coin_9326145.png" alt="leaf"></a>
+                    </div>
+                    <a href="/"><h1>Natural Essential Oils</h1></a>
+                </div>
+
+            </div>
+            <div class="login-section">
+                <form action="" method="post">
+                    <div id="search-line">
+                        <button type="submit" id="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <input type="text" id="search" name="search" placeholder="Keresés...">
+                    </div>
+                </form>
+                <div class="logo-img-container">
+                    <a href="/login"><i class="fa-solid fa-user"></i></a>
+                </div>
+                <div class="logo-img-container">
+                    <i class="fa-solid fa-cart-shopping shopping-bag"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Navigáció -->
+        <nav>
+            <ul class="main-menu">
+                <li> <a href="">Akciók</a></li>
+                <li> <a href="">Illóolajok</a></li>
+                <li> <a href="">Csomagok</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>

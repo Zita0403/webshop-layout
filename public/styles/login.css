@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+body i {
+    cursor: pointer;
+}
+
+body li {
+    list-style: none;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header logo, oldal címe */
+
+header {
+    display: grid;
+    background-color: #717d3b;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.header-section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px 5px;
+}
+
+.logo-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    gap: 10px;
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo-img {
+    width: 50px;
+}
+
+#logo-img img {
+    width: 100%;
+}
+
+h1 {
+    font-family: "Tenor Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    font-size: 1.8rem;
+}
+
+/* Header form */
+
+.login-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.login-section i {
+    font-size: 1.5rem;
+    padding-top: 5px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#search-line {
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color:#c9cfc3;
+    color: #333;
+    width: 100%;
+}
+
+#search {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background-color:#c9cfc3;
+    color: #333;
+    font-size: 16px;
+    width: 90%;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#search-button {
+    background-color:#c9cfc3;
+    border-radius: 20px 0 0 20px;
+    background-size: contain;
+    border: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+#search-button i {
+    color: #888888;
+}
+
+.search-img {
+    width: 50px;
+}
+
+.logo-img-container {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.logo-img-container > img {
+    width: 100%;
+    height: 100%;
+}
+
+.bigger-img {
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Header menüsor */
+
+.main-menu {
+    display: none;
+    justify-content: space-around;
+    align-items: center; 
+    padding: 30px 0;
+    margin: 0;
+    height: 30px;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.main-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+.main-menu a:hover::after {
+    width: 100%;
+}
+
+/* Header Mobil menü */
+
+#toggle-btn {
+    display: block;
+    padding-left: 15px;
+}
+#toggle-btn:hover {
+    cursor: pointer;
+}
+
+#toggle-btn i {
+    font-size: 1.5rem;
+}
+
+#hamburger-menu {
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background-color: #717d3b; */
+    background-color: #b2c65c;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+}
+
+#hamburger-menu li {
+    display: inline-block;
+}
+
+#hamburger-menu a {
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+#hamburger-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px; 
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+}
+
+#hamburger-menu a:hover::after,
+#hamburger-menu a:focus::after,
+#hamburger-menu a:focus-visible::after {
+    width: 100%;
+}
+
+#hamburger-menu.open {
+    display: flex;
+}
+
+#close-hamburger-menu {
+    align-self: flex-end;
+    padding-right: 15px;
+    font-size: 1rem;  
+}
+
+#hamburger-menu a {
+    font-size: 1rem;
+}
+
+/* Main */
+
+main {
+    background-color: #ADBC9F;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    padding: 50px 0;
+}
+
+#login {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    gap: 15px;
+    width: 50%;
+}
+#login h1 {
+    align-self: center;
+    justify-self: center;
+}
+#login form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+    gap: 15px;
+}
+#login form input {
+    border-radius: 16px;
+    border: none;
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 15px;
+}
+#login form button {
+    background-image: linear-gradient(to right, #bfdaa6 , #717d3b);
+    border-radius: 16px;
+    border: none;
+    height: 2.5rem;
+}
+
+#g-signIn i{
+    padding-right: 20px;
+}
+#login a {
+    justify-self: center;
+}
+
+#login button:hover {
+    cursor: pointer;
+    filter: brightness(1.15);
+}
+
+/* Footer */
+
+footer  {
+    background-color: #717d3b; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 2px 0;
+    text-align: left;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #adbc9f;
+}
+
+footer li {
+    text-align: left;
+}
+
+@media screen and (min-width:768px){
+    #login {
+        width: 30%;
+    }
+}
+
+ @media screen and (min-width:992px){
+
+    .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    #toggle-btn {
+        display: none;
+    }
+
+    .login-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+
+    #search-line {
+        display: flex;
+    }
+
+    .main-menu {
+        display: flex;
+    }
+    #login {
+        width: 25%;
+    }
+
+    footer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} 
+
+@media screen and (min-width:1200px){
+
+
+}  
